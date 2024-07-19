@@ -6,4 +6,16 @@
 5. get into django project: cd bckend
 6. create app: python manage.py startapp api
 7. move req.txt back into bckend folder
-8. create a serializer.py file 
+8. create a serializer.py file
+9. Meta Class: Defines the model and fields to include in the serialization process.
+   9.1.A. extra_kwargs: Additional settings for specific fields. Here, it ensures that the password is write-only (not returned in API responses).
+   9.1.B. extra_kwargs to be written in dictionary format
+10. **validated_data unpacks the dictionary into keyword arguments, effectively calling:
+    10.a. Validated data: {
+                          'username': 'ujayreat',
+                          'password': 'password12',
+                          'email': 'ujayreat@example.com'
+                          }
+
+    10.a. User.objects.create_user(username='ujayreat', password='password12', email='ujayreat@example.com')
+
