@@ -19,3 +19,4 @@
 
     10.a. User.objects.create_user(username='ujayreat', password='password12', email='ujayreat@example.com')
 11. Self is the first parameter of any method in a class, and it allows us to access the instance's attributes and other methods from within the class.
+12. Axios is a popular HTTP client for making requests to servers. You can use it to fetch data from APIs, send data to servers, etc.
